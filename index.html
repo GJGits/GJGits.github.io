@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- Jquery min -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Marco Clemente Nanci CV</title>
+</head>
+
+<body>
+
+<style>
+    .profileimg {
+      border-radius: 100%;
+      border-color: black;
+      border-style: solid;
+      border-width: 3px;
+    }
+
+    .star.checked {
+      color: red;
+    }
+
+    .star {
+      color: black;
+      font-size: 25px;
+    }
+
+    .skill {
+      border-color: black;
+      border-width: 1px;
+      border-style: solid;
+    }
+
+    .btn-outline-success {
+      border-color: black;
+      color: black;
+    }
+
+    .btn-outline-success:hover {
+      border-color: black;
+      color: black;
+      background-color: greenyellow;
+    }
+
+    .work-exp {
+      border-left: 2px solid lightgrey;
+    }
+
+    .card-work {
+      border-left: 2px solid greenyellow;
+    }
+
+    .timeline-card::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      background-color: greenyellow;
+      width: 25px;
+      height: 2px;
+      top: 25px;
+      left: -24px;
+      z-index: 1;
+    }
+
+    .timeline-card::before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      background-color: #fff;
+      border-color: green;
+      border-radius: 10px;
+      width: 12px;
+      height: 12px;
+      top: 20px;
+      left: -37px;
+      border: 2px solid;
+    }
+
+    .nav-link {
+      color: green !important;
+    }
+
+    .nav-link.active {
+      color: black !important;
+      background-color: greenyellow !important;
+    }
+
+    /* hidden on-screen */
+    .print {
+      display: none;
+    }
+
+    @media print {
+
+      /* visible when printed */
+      .noprint {
+        display: none;
+      }
+
+      .print {
+        display: block;
+      }
+
+      .star {
+        color: black;
+        font-size: 1em;
+      }
+
+      ul{
+        list-style: none;
+      }
+
+      #work-cont {
+        margin-top: 15cm !important;
+      }
+    }
+  </style>
+
+<div class="container shadow p-3 mb-5 bg-body rounded">
+
+    <!-- Name and profession layer -->
+    <div class="p-3" style="background-color: greenyellow;">
+        <img class="profileimg mx-auto d-block mt-3" src="https://avatars.githubusercontent.com/u/26226708?v=4" alt=""
+             width="150" height="150">
+        <h1 class="text-center">Marco Clemente Nanci</h1>
+        <h4 class="text-center ">Software Engineer</h2>
+    </div>
+
+    <!-- About me layer -->
+
+    <div class="mt-3 container-fluid">
+
+        <div class="row">
+
+            <div class="col-sm-12 col-md-6">
+                <h3>About me</h3>
+                <p>
+                    Enthusiastic Programmer eager to contribute to team success through hard work, attention to detail and
+                    excellent
+                    organizational skills.
+                    Clear understanding of a variety of programming languages. Motivated to learn, grow and excel in the
+                    software
+                    industry.
+                </p>
+            </div>
+
+            <div class="offset-md-1 col-sm-12 col-md-5">
+
+                <div>
+                    <span> <b>Age</b> 27 </span>
+                </div>
+
+                <div class="mt-3">
+                    <span> <b>Email</b> golla.programmazione@gmail.com </span>
+                </div>
+
+                <div class="mt-3">
+            <span><b>Languages</b>
+              <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAAAZklEQVRoge3PMRGAQAxFwRwNLpBAgzKMoIwGDbiggQoDXPGHmd0qzSX3qgDgx9o7zPt6f1lwLFvfD6bx07N2Xq2qaui7nicgTUCagDQBaQLSBKQJSBOQJiBNQJqANAFpAtIEAAAdHt3dBjzRsWj1AAAAAElFTkSuQmCC"
+                      height="20" width="25"></span>
+                    <img src="https://img.icons8.com/cute-clipart/64/000000/great-britain.png" height="20" width="25" />
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+    <hr>
+
+    <!-- Skills layer HTML version -->
+    <div class="mt-3 container-fluid noprint">
+        <h3 class="mb-3">Professional Skills</h3>
+
+        <ul class="nav nav-pills justify-content-center mb-3">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page">All</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Languages</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Frameworks</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" tabindex="-1" aria-disabled="true">Others</a>
+            </li>
+        </ul>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div id="sk1" class="col-sm-12 col-md-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <img id="imgsk1" class="me-xs-3 me-md-5" src="https://img.icons8.com/color/96/000000/c-programming.png"
+                                 width="96" height="96">
+                            <span id="s1sk1" class="star">&#10038;</span>
+                            <span id="s2sk1" class="star">&#10038;</span>
+                            <span id="s3sk1" class="star">&#10038;</span>
+                            <span id="s4sk1" class="star">&#10038;</span>
+                            <span id="s5sk1" class="star">&#10038;</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="sk2" class="col-xs-12 col-md-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <img id="imgsk2" class="me-xs-3 me-md-5"
+                                 src="https://img.icons8.com/color/96/000000/c-plus-plus-logo.png" />
+                            <span id="s1sk2" class="star">&#10038;</span>
+                            <span id="s2sk2" class="star">&#10038;</span>
+                            <span id="s3sk2" class="star">&#10038;</span>
+                            <span id="s4sk2" class="star">&#10038;</span>
+                            <span id="s5sk2" class="star">&#10038;</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="sk3" class="col-xs-12 col-md-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <img id="imgsk3" class="me-xs-3 me-md-5"
+                                 src="https://img.icons8.com/color/96/000000/java-coffee-cup-logo.png" />
+                            <span id="s1sk3" class="star">&#10038;</span>
+                            <span id="s2sk3" class="star">&#10038;</span>
+                            <span id="s3sk3" class="star">&#10038;</span>
+                            <span id="s4sk3" class="star">&#10038;</span>
+                            <span id="s5sk3" class="star">&#10038;</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="offset-4 col-4 d-flex justify-content-center mb-5">
+                <button id="skprev" type="button" class="btn btn-outline-success" style="border-radius: 100%;"> &lt;
+                </button>
+                <button id="sknext" type="button" class="btn btn-outline-success ms-5" style="border-radius: 100%;"> &gt;
+                </button>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Skills layer PDF version -->
+    <div class="print">
+        <h3 class="">Professional Skills</h3>
+        <div id="print_sk_cont" class="row">
+
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Work experiences layer-->
+    <div id="work-cont" class="mt-2 container-fluid">
+        <h3>Working experiences</h3>
+
+        <div class="container work-exp mt-3">
+
+            <div class="card ms-3 card-work timeline-card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Full stack developer <b class="text-muted">at RGI S.P.A</b></h5>
+                    <h6 class="card-subtitle mb-2 text-muted">September, 2021 - Current</h6>
+                    <p class="card-text"> My role at the RGI is managing a variety of software solving bugs and implementing
+                        new features for clients both at frontend and backend level.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card ms-3 card-work timeline-card">
+                <div class="card-body">
+                    <h5 class="card-title">Private Lesson Teacher <b class="text-muted">at Politecnico of Turin</b></h5>
+                    <h6 class="card-subtitle mb-2 text-muted">January, 2018 - April, 2021</h6>
+                    <p class="card-text">I worked as a private teacher for students at my university as well as teachers'
+                        assistant to help students
+                        during laboratories. My role was to help students on solving a laboratory task or to give them repetetions
+                        on some of the topics that were
+                        possible to find during the final test. </p>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <hr>
+
+    <!-- Education layer-->
+    <div class="mt-2 container-fluid">
+        <h3>Education</h3>
+
+        <div class="container work-exp mt-3">
+
+            <div class="card ms-3 card-work timeline-card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Maters in Computer Science <b class="text-muted">at Politecnico of Turin</b></h5>
+                    <h6 class="card-subtitle mb-2 text-muted">2018 - 2021 (105/110)</h6>
+                    <p class="card-text">The objective of this course is to share relevant skills that that are possible to
+                        spend to work in the industry production areas as well in
+                        the service to citizens and firms ones. The main goal of this course is to give a deep knowledge on the
+                        following subjects: </p>
+                    <ul>
+                        <li>Hardware</li>
+                        <li>Operating systems</li>
+                        <li>Networking</li>
+                        <li>Cybersecurity</li>
+                        <li>Database management</li>
+                        <li>Methodologies to produce and mantain software</li>
+                        <li>Distributed systems</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card ms-3 card-work timeline-card">
+                <div class="card-body">
+                    <h5 class="card-title">Bachelor in Management Engeneering <b class="text-muted">at Politecnico of Turin</b>
+                    </h5>
+                    <h6 class="card-subtitle mb-2 text-muted">2013 - 2018 (80/110)</h6>
+                    <p class="card-text">Course focused on the ICT management with a particular attention to the information
+                        systems technologies that support a company in its main
+                        activities, like planning and controlling of of the production and the logistic flows. The main topics of
+                        this course are:</p>
+
+                    <ul>
+                        <li>Mathematical analysis</li>
+                        <li>Introduction to some programming languages</li>
+                        <li>Logistic</li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="text-center fw-bold" style="font-size: 10px;">
+        All icons provided by
+    </p>
+
+    <a href="https://icons8.com/">
+        <p class="text-center" style="font-size: 10px;">Icons8</p>
+    </a>
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    jQuery(document).ready(() => {
+
+      const skills = [
+        { name: 'C', category: 'languages', image_link: 'https://img.icons8.com/color/96/000000/c-programming.png', rate: 4 },
+        { name: 'C++', category: 'languages', image_link: 'https://img.icons8.com/color/96/000000/c-plus-plus-logo.png', rate: 4 },
+        { name: 'Java', category: 'languages', image_link: 'https://img.icons8.com/color/96/000000/java-coffee-cup-logo.png', rate: 4 },
+        { name: 'Python', category: 'languages', image_link: 'https://img.icons8.com/color/96/000000/python.png', rate: 3 },
+        { name: 'Javascript', category: 'languages', image_link: 'https://img.icons8.com/color/96/000000/javascript.png', rate: 3 },
+        { name: 'HTML', category: 'languages', image_link: 'https://img.icons8.com/color/96/000000/html-5--v1.png', rate: 4 },
+        { name: 'CSS', category: 'languages', image_link: 'https://img.icons8.com/color/96/000000/css3.png', rate: 3 },
+        { name: 'PHP', category: 'languages', image_link: 'data:image/png;base64,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', rate: 2 },
+        { name: 'Bootstrap', category: 'frameworks', image_link: 'https://img.icons8.com/color/96/000000/bootstrap.png', rate: 3 },
+        { name: 'Angular', category: 'frameworks', image_link: 'https://img.icons8.com/color/96/000000/angularjs.png', rate: 4 },
+        { name: 'Spring boot', category: 'frameworks', image_link: 'https://img.icons8.com/color/96/000000/spring-logo.png', rate: 3 },
+        { name: 'Nodejs', category: 'frameworks', image_link: 'https://img.icons8.com/color/96/000000/nodejs.png', rate: 3 },
+        { name: 'MySQL', category: 'others', image_link: 'https://img.icons8.com/fluent/96/000000/mysql-logo.png', rate: 3 },
+        { name: 'MongoDB', category: 'others', image_link: 'https://img.icons8.com/color/96/000000/mongodb.png', rate: 3 },
+        { name: 'Docker', category: 'others', image_link: 'https://img.icons8.com/color/96/000000/docker.png', rate: 3 },
+        { name: 'Linux', category: 'others', image_link: 'https://img.icons8.com/color/96/000000/linux.png', rate: 3 },
+        { name: 'Git', category: 'others', image_link: 'https://img.icons8.com/color/96/000000/git.png', rate: 3 }
+      ];
+
+
+      const max_skills_per_page = 3;
+      var current_page = 0;
+      var current_category = 'all'; // all, languages, frameworks, others
+      var num_of_pages = Math.ceil(skills.length / max_skills_per_page);
+      var selected_skills = skills;
+
+      function show_skill(skill, element_id) {
+        jQuery('#sk' + element_id).show();
+        jQuery('#imgsk' + element_id).attr('src', skill.image_link);
+        for (let j = 0; j < skill.rate; j++) {
+          let current_star = jQuery('#s' + (j + 1) + 'sk' + element_id);
+          if (!current_star.hasClass('checked'))
+            current_star.addClass('checked');
+        }
+        for (let j = skill.rate; j < 5; j++) {
+          let current_star = jQuery('#s' + (j + 1) + 'sk' + element_id);
+          current_star.removeClass('checked');
+        }
+      }
+
+      function hide_skill(num_of_skills_left) {
+        for (let i = (num_of_skills_left + 1); i <= 3; i++) {
+          jQuery('#sk' + i).hide();
+        }
+      }
+
+      function fill_printable_skill_section() {
+        let categories = ['languages', 'frameworks', 'others'];
+        for (let i = 0; i < categories.length; i++) {
+          let skills_selected = skills.filter((el) => el.category === categories[i]);
+          let ul_id = 'pr' + categories[i];
+          jQuery('#print_sk_cont').append('<ul class="col-4" id="' + ul_id + '"></ul>');
+          for (let j = 0; j < skills_selected.length; j++) {
+            let skill = skills_selected[j];
+            let skill_html = skill.name + ': ';
+            let z = 0;
+            for (z; z < skill.rate; z++) {
+              skill_html += '<span class="star checked">&#10038;</span>';
+            }
+            for (z; z < 5; z++) {
+              skill_html += '<span class="star">&#10038;</span>';
+            }
+            jQuery('#' + ul_id).append('<li>' + skill_html + '</li>');
+          }
+        }
+      }
+
+      function update_page() {
+        let start_index = max_skills_per_page * current_page;
+        let num_of_skills_left = selected_skills.length - start_index;
+        let end_index = num_of_skills_left > 3 ? (start_index + 3) : (start_index + num_of_skills_left);
+        for (let i = start_index; i < end_index; i++) {
+          let current_skill = selected_skills[i];
+          show_skill(current_skill, (i - start_index + 1));
+        }
+        hide_skill(num_of_skills_left);
+      }
+
+      jQuery('.nav-link').click(function () {
+        jQuery('.nav-link.active').removeClass('active');
+        let this_element = jQuery(this);
+        this_element.addClass('active');
+        current_page = 0;
+        current_category = this_element.html().toLowerCase();
+        selected_skills = (current_category === 'all') ? skills : skills.filter((el) => el.category === current_category);
+        num_of_pages = Math.ceil(selected_skills.length / max_skills_per_page);
+        update_page();
+      });
+
+      jQuery('#sknext').click(() => {
+        current_page = (current_page + 1) >= num_of_pages ? 0 : (current_page + 1);
+        update_page();
+      });
+
+      jQuery('#skprev').click(() => {
+        current_page = (current_page - 1) < 0 ? (num_of_pages - 1) : (current_page - 1);
+        update_page();
+      });
+
+      update_page();
+      fill_printable_skill_section();
+
+
+    });
+  </script>
+
+</body>
+
+</html>
